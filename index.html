@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>neurodivergent</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/open-dyslexic@1.0.3/open-dyslexic.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="white-black">
+
+<header>
+    <h1>neurodivergent</h1>
+    <button id="toggle-settings">⚙️</button>
+</header>
+
+
+<div id="settings">
+    <h2>Settings</h2>
+
+    <label>Contrast</label>
+    <select id="contrast">
+        <option value="white-black">White & Black</option>
+        <option value="grey-black">Grey & Black</option>
+        <option value="black-orange">Black & Orange</option>
+    </select>
+
+    <label>Font</label>
+    <select id="font">
+        <option value="inter">Inter</option>
+        <option value="roboto">Roboto Slab</option>
+        <option value="dyslexic">OpenDyslexic</option>
+    </select>
+
+    <label>Font Size</label>
+    <input type="range" id="fontSize" min="16" max="40" value="20">
+
+    <label>Line Height</label>
+    <input type="range" id="lineHeight" min="1" max="3" step="0.1" value="1.8">
+
+    <label>Word Spacing</label>
+    <input type="range" id="spacing" min="0" max="20" value="4">
+
+    <label><input type="checkbox" id="focusMode"> Focus Mode</label>
+    <label><input type="checkbox" id="ruler"> Reading Ruler</label>
+    <label><input type="checkbox" id="reduceMotion"> Reduce Motion</label>
+</div>
+
+
+<main>
+    <div id="reader">
+
+        <div class="paragraph" data-level="Easy">
+            The sun was warm. She smiled and felt calm.
+        </div>
+
+        <div class="paragraph" data-level="Moderate">
+            The city whispered around him, full of movement and hidden intentions that weren’t always clear.
+        </div>
+
+        <div class="paragraph" data-level="Complex">
+            The philosophical implications of his thoughts created a layered perception of reality, where meaning was not explicit but constructed through inference.
+        </div>
+
+        <div id="cognitive"></div>
+    </div>
+
+    <!-- COMMENTS -->
+    <div id="comments-section">
+        <h2>Community Insights</h2>
+
+        <textarea id="commentInput" placeholder="Write your thoughts..."></textarea>
+        <button id="postComment">Post</button>
+
+        <div id="commentsList"></div>
+    </div>
+</main>
+
+<div id="reading-ruler"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
