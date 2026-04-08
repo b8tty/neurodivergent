@@ -1,4 +1,4 @@
-# Neurodivergent-Friendly Web App
+# neurodivergent
 
 This project demonstrates a **web application designed for neurodivergent users**, focusing on accessibility and Human-Computer Interaction (HCI) principles.
 
