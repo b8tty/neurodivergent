@@ -21,12 +21,6 @@ It showcases features that **other apps often miss**, helping users with ADHD, d
 
 ---
 
-## Live Demo
-
-*(Optional: host on GitHub Pages and include link)*
-
----
-
 ## How to Use
 
 1. Clone or download this repository.
